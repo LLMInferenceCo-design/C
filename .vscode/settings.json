@@ -1,0 +1,9 @@
+{
+    "workbench.editorAssociations": {
+        "*.md": "default",
+        "*.markdown": "default"
+    },
+    "files.associations": {
+        "iostream": "cpp"
+    }
+}
