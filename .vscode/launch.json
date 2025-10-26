@@ -12,7 +12,7 @@
             "console": "integratedTerminal"
         },
         {
-            "name": "(gdb) 启动",
+            "name": "c++单文件",
             "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/out/a",
@@ -21,6 +21,7 @@
             "cwd": "${workspaceFolder}",
             "environment": [],
             "externalConsole": false,
+            "internalConsoleOptions": "neverOpen",
             "MIMode": "gdb",
             "preLaunchTask": "C/C++", // 添加这一行
             "setupCommands": [
