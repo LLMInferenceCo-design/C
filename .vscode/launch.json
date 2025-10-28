@@ -36,6 +36,33 @@
                     "ignoreFailures": true
                 }
             ]
+        },
+        {
+            "name": "nvcc",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/out/a",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "console": "integratedTerminal",
+            "MIMode": "gdb",
+            "miDebuggerPath": "/usr/local/cuda/bin/cuda-gdb", // 修改为 cppdbg 并指定 cuda-gdb 路径
+            "preLaunchTask": "mynvcc", // 添加这一行
+            "setupCommands": [
+                {
+                    "description": "为 gdb 启用整齐打印",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ]
         }
     ]
 }

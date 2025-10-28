@@ -23,6 +23,24 @@
             },
             "detail": "调试器生成的任务。"
         }, 
+        {
+            "label": "mynvcc",
+            "type": "shell",
+            "command": "nvcc",
+            "args": ["-g","-G","-o","${workspaceFolder}/out/a","${file}"],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "调试器生成的任务。"
+        }
+        
     ],
     "version": "2.0.0"
 }

@@ -4,6 +4,7 @@
         "*.markdown": "default"
     },
     "files.associations": {
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "new": "cpp"
     }
 }
