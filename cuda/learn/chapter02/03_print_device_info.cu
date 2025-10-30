@@ -71,6 +71,7 @@ int main(){
         printf("Maximum memory pitch: %lu bytes\n", prop.memPitch);//分配二位数组时，行宽度最大值
 
         printf("------------------end--------------------\n");
+        // cout<<warpSize<<"\n";
 
         cudaDeviceReset();
     }
